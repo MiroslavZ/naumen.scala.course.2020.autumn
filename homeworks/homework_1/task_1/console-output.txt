@@ -1,0 +1,64 @@
+Microsoft Windows [Version 10.0.19041.508]
+(c) Корпорация Майкрософт (Microsoft Corporation), 2020. Все права защищены.
+
+C:\Users\Miroslav>scala
+Welcome to Scala 2.12.10 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_261).
+Type in expressions for evaluation. Or try :help.
+
+scala> "Hello Scala! This is MiroslavZ"
+res0: String = Hello Scala! This is MiroslavZ
+
+scala> res0.replaceFirst("Hello","Hola")
+res1: String = Hola Scala! This is MiroslavZ
+
+scala> res1.replaceFirst("Hola","Guten tag")
+res2: String = Guten tag Scala! This is MiroslavZ
+
+scala> res0.substring(21,30)
+res3: String = MiroslavZ
+
+scala> res3.reverse
+res4: String = ZvalsoriM
+
+scala> res0.replaceFirst(res3,res4)
+res5: String = Hello Scala! This is ZvalsoriM
+
+scala> res1.replaceFirst(res3,res4)
+res6: String = Hola Scala! This is ZvalsoriM
+
+scala> res2.replaceFirst(res3,res4)
+res7: String = Guten tag Scala! This is ZvalsoriM
+
+scala> val a ="Hello Scala! This is MiroslavZ"
+a: String = Hello Scala! This is MiroslavZ
+
+scala> val b = a.replaceFirst("Hello","Hola")
+b: String = Hola Scala! This is MiroslavZ
+
+scala> val c = b.replaceFirst("Hola","Guten tag")
+c: String = Guten tag Scala! This is MiroslavZ
+
+scala> val d = a.substring(21,30)
+d: String = MiroslavZ
+
+scala> val e = d.reverse
+e: String = ZvalsoriM
+
+scala> f = a.replaceFirst(d,e)
+<console>:14: error: not found: value f
+       f = a.replaceFirst(d,e)
+       ^
+<console>:15: error: not found: value f
+       val $ires0 = f
+                    ^
+
+scala> val f = a.replaceFirst(d,e)
+f: String = Hello Scala! This is ZvalsoriM
+
+scala> val g = b.replaceFirst(d,e)
+g: String = Hola Scala! This is ZvalsoriM
+
+scala> val h = c.replaceFirst(d,e)
+h: String = Guten tag Scala! This is ZvalsoriM
+
+scala>
