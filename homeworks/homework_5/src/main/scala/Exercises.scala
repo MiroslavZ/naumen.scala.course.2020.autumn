@@ -1,6 +1,7 @@
 import Exercises.Animal
 
-object Exercises {
+object Exercises 
+  {
   trait Animal {
     def name: String
   }
